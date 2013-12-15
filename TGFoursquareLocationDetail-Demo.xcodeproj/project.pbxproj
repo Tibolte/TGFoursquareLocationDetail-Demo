@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC239339185E5DCE0039E6F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC239338185E5DCE0039E6F8 /* Foundation.framework */; };
+		AC23933B185E5DCE0039E6F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC23933A185E5DCE0039E6F8 /* CoreGraphics.framework */; };
+		AC23933D185E5DCE0039E6F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC23933C185E5DCE0039E6F8 /* UIKit.framework */; };
+		AC239343185E5DCE0039E6F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC239341185E5DCE0039E6F8 /* InfoPlist.strings */; };
+		AC239345185E5DCE0039E6F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC239344185E5DCE0039E6F8 /* main.m */; };
+		AC239349185E5DCE0039E6F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC239348185E5DCE0039E6F8 /* AppDelegate.m */; };
+		AC23934C185E5DCE0039E6F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC23934A185E5DCE0039E6F8 /* Main.storyboard */; };
+		AC23934F185E5DCE0039E6F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC23934E185E5DCE0039E6F8 /* ViewController.m */; };
+		AC239351185E5DCE0039E6F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC239350185E5DCE0039E6F8 /* Images.xcassets */; };
+		AC239358185E5DCE0039E6F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC239357185E5DCE0039E6F8 /* XCTest.framework */; };
+		AC239359185E5DCE0039E6F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC239338185E5DCE0039E6F8 /* Foundation.framework */; };
+		AC23935A185E5DCE0039E6F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC23933C185E5DCE0039E6F8 /* UIKit.framework */; };
+		AC239362185E5DCE0039E6F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC239360185E5DCE0039E6F8 /* InfoPlist.strings */; };
+		AC239364185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC239363185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m */; };
+		AC239370185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC23935B185E5DCE0039E6F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC23932D185E5DCE0039E6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC239334185E5DCE0039E6F8;
+			remoteInfo = "TGFoursquareLocationDetail-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC239335185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TGFoursquareLocationDetail-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC239338185E5DCE0039E6F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC23933A185E5DCE0039E6F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AC23933C185E5DCE0039E6F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AC239340185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TGFoursquareLocationDetail-Demo-Info.plist"; sourceTree = "<group>"; };
+		AC239342185E5DCE0039E6F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC239344185E5DCE0039E6F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC239346185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TGFoursquareLocationDetail-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		AC239347185E5DCE0039E6F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC239348185E5DCE0039E6F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC23934B185E5DCE0039E6F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC23934D185E5DCE0039E6F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC23934E185E5DCE0039E6F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AC239350185E5DCE0039E6F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC239356185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TGFoursquareLocationDetail-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC239357185E5DCE0039E6F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AC23935F185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TGFoursquareLocationDetail-DemoTests-Info.plist"; sourceTree = "<group>"; };
+		AC239361185E5DCE0039E6F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC239363185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGFoursquareLocationDetail_DemoTests.m; sourceTree = "<group>"; };
+		AC23936E185E5FAF0039E6F8 /* TGFoursquareLocationDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TGFoursquareLocationDetail.h; path = TGFoursquareLocationDetail/TGFoursquareLocationDetail.h; sourceTree = "<group>"; };
+		AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TGFoursquareLocationDetail.m; path = TGFoursquareLocationDetail/TGFoursquareLocationDetail.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC239332185E5DCE0039E6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC23933B185E5DCE0039E6F8 /* CoreGraphics.framework in Frameworks */,
+				AC23933D185E5DCE0039E6F8 /* UIKit.framework in Frameworks */,
+				AC239339185E5DCE0039E6F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC239353185E5DCE0039E6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC239358185E5DCE0039E6F8 /* XCTest.framework in Frameworks */,
+				AC23935A185E5DCE0039E6F8 /* UIKit.framework in Frameworks */,
+				AC239359185E5DCE0039E6F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC23932C185E5DCE0039E6F8 = {
+			isa = PBXGroup;
+			children = (
+				AC23933E185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo */,
+				AC23935D185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests */,
+				AC239337185E5DCE0039E6F8 /* Frameworks */,
+				AC239336185E5DCE0039E6F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC239336185E5DCE0039E6F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC239335185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo.app */,
+				AC239356185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC239337185E5DCE0039E6F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC239338185E5DCE0039E6F8 /* Foundation.framework */,
+				AC23933A185E5DCE0039E6F8 /* CoreGraphics.framework */,
+				AC23933C185E5DCE0039E6F8 /* UIKit.framework */,
+				AC239357185E5DCE0039E6F8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC23933E185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AC23936D185E5E160039E6F8 /* TGFoursquareLocationDetail */,
+				AC239347185E5DCE0039E6F8 /* AppDelegate.h */,
+				AC239348185E5DCE0039E6F8 /* AppDelegate.m */,
+				AC23934A185E5DCE0039E6F8 /* Main.storyboard */,
+				AC23934D185E5DCE0039E6F8 /* ViewController.h */,
+				AC23934E185E5DCE0039E6F8 /* ViewController.m */,
+				AC239350185E5DCE0039E6F8 /* Images.xcassets */,
+				AC23933F185E5DCE0039E6F8 /* Supporting Files */,
+			);
+			path = "TGFoursquareLocationDetail-Demo";
+			sourceTree = "<group>";
+		};
+		AC23933F185E5DCE0039E6F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC239340185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo-Info.plist */,
+				AC239341185E5DCE0039E6F8 /* InfoPlist.strings */,
+				AC239344185E5DCE0039E6F8 /* main.m */,
+				AC239346185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC23935D185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC239363185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m */,
+				AC23935E185E5DCE0039E6F8 /* Supporting Files */,
+			);
+			path = "TGFoursquareLocationDetail-DemoTests";
+			sourceTree = "<group>";
+		};
+		AC23935E185E5DCE0039E6F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC23935F185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests-Info.plist */,
+				AC239360185E5DCE0039E6F8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC23936D185E5E160039E6F8 /* TGFoursquareLocationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AC23936E185E5FAF0039E6F8 /* TGFoursquareLocationDetail.h */,
+				AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */,
+			);
+			name = TGFoursquareLocationDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC239334185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC239367185E5DCE0039E6F8 /* Build configuration list for PBXNativeTarget "TGFoursquareLocationDetail-Demo" */;
+			buildPhases = (
+				AC239331185E5DCE0039E6F8 /* Sources */,
+				AC239332185E5DCE0039E6F8 /* Frameworks */,
+				AC239333185E5DCE0039E6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TGFoursquareLocationDetail-Demo";
+			productName = "TGFoursquareLocationDetail-Demo";
+			productReference = AC239335185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC239355185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC23936A185E5DCE0039E6F8 /* Build configuration list for PBXNativeTarget "TGFoursquareLocationDetail-DemoTests" */;
+			buildPhases = (
+				AC239352185E5DCE0039E6F8 /* Sources */,
+				AC239353185E5DCE0039E6F8 /* Frameworks */,
+				AC239354185E5DCE0039E6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC23935C185E5DCE0039E6F8 /* PBXTargetDependency */,
+			);
+			name = "TGFoursquareLocationDetail-DemoTests";
+			productName = "TGFoursquareLocationDetail-DemoTests";
+			productReference = AC239356185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC23932D185E5DCE0039E6F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Thibault Guégan";
+				TargetAttributes = {
+					AC239355185E5DCE0039E6F8 = {
+						TestTargetID = AC239334185E5DCE0039E6F8;
+					};
+				};
+			};
+			buildConfigurationList = AC239330185E5DCE0039E6F8 /* Build configuration list for PBXProject "TGFoursquareLocationDetail-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC23932C185E5DCE0039E6F8;
+			productRefGroup = AC239336185E5DCE0039E6F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC239334185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo */,
+				AC239355185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC239333185E5DCE0039E6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC239351185E5DCE0039E6F8 /* Images.xcassets in Resources */,
+				AC239343185E5DCE0039E6F8 /* InfoPlist.strings in Resources */,
+				AC23934C185E5DCE0039E6F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC239354185E5DCE0039E6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC239362185E5DCE0039E6F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC239331185E5DCE0039E6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC23934F185E5DCE0039E6F8 /* ViewController.m in Sources */,
+				AC239349185E5DCE0039E6F8 /* AppDelegate.m in Sources */,
+				AC239345185E5DCE0039E6F8 /* main.m in Sources */,
+				AC239370185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC239352185E5DCE0039E6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC239364185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC23935C185E5DCE0039E6F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC239334185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo */;
+			targetProxy = AC23935B185E5DCE0039E6F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC239341185E5DCE0039E6F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC239342185E5DCE0039E6F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AC23934A185E5DCE0039E6F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC23934B185E5DCE0039E6F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC239360185E5DCE0039E6F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC239361185E5DCE0039E6F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC239365185E5DCE0039E6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC239366185E5DCE0039E6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC239368185E5DCE0039E6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TGFoursquareLocationDetail-Demo/TGFoursquareLocationDetail-Demo-Prefix.pch";
+				INFOPLIST_FILE = "TGFoursquareLocationDetail-Demo/TGFoursquareLocationDetail-Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AC239369185E5DCE0039E6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TGFoursquareLocationDetail-Demo/TGFoursquareLocationDetail-Demo-Prefix.pch";
+				INFOPLIST_FILE = "TGFoursquareLocationDetail-Demo/TGFoursquareLocationDetail-Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AC23936B185E5DCE0039E6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TGFoursquareLocationDetail-Demo.app/TGFoursquareLocationDetail-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TGFoursquareLocationDetail-Demo/TGFoursquareLocationDetail-Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TGFoursquareLocationDetail-DemoTests/TGFoursquareLocationDetail-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AC23936C185E5DCE0039E6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TGFoursquareLocationDetail-Demo.app/TGFoursquareLocationDetail-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TGFoursquareLocationDetail-Demo/TGFoursquareLocationDetail-Demo-Prefix.pch";
+				INFOPLIST_FILE = "TGFoursquareLocationDetail-DemoTests/TGFoursquareLocationDetail-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC239330185E5DCE0039E6F8 /* Build configuration list for PBXProject "TGFoursquareLocationDetail-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC239365185E5DCE0039E6F8 /* Debug */,
+				AC239366185E5DCE0039E6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC239367185E5DCE0039E6F8 /* Build configuration list for PBXNativeTarget "TGFoursquareLocationDetail-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC239368185E5DCE0039E6F8 /* Debug */,
+				AC239369185E5DCE0039E6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC23936A185E5DCE0039E6F8 /* Build configuration list for PBXNativeTarget "TGFoursquareLocationDetail-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC23936B185E5DCE0039E6F8 /* Debug */,
+				AC23936C185E5DCE0039E6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC23932D185E5DCE0039E6F8 /* Project object */;
+}
