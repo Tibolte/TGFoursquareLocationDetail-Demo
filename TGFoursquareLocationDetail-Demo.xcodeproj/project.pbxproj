@@ -22,6 +22,7 @@
 		AC239362185E5DCE0039E6F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC239360185E5DCE0039E6F8 /* InfoPlist.strings */; };
 		AC239364185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC239363185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m */; };
 		AC239370185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */; };
+		AC886807185FD81F0021F39D /* iceland.png in Resources */ = {isa = PBXBuildFile; fileRef = AC886806185FD81F0021F39D /* iceland.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		AC239363185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGFoursquareLocationDetail_DemoTests.m; sourceTree = "<group>"; };
 		AC23936E185E5FAF0039E6F8 /* TGFoursquareLocationDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TGFoursquareLocationDetail.h; path = TGFoursquareLocationDetail/TGFoursquareLocationDetail.h; sourceTree = "<group>"; };
 		AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TGFoursquareLocationDetail.m; path = TGFoursquareLocationDetail/TGFoursquareLocationDetail.m; sourceTree = "<group>"; };
+		AC886806185FD81F0021F39D /* iceland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iceland.png; path = Images/iceland.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		AC23933E185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				AC886805185FD80C0021F39D /* Images */,
 				AC23936D185E5E160039E6F8 /* TGFoursquareLocationDetail */,
 				AC239347185E5DCE0039E6F8 /* AppDelegate.h */,
 				AC239348185E5DCE0039E6F8 /* AppDelegate.m */,
@@ -163,6 +166,14 @@
 				AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */,
 			);
 			name = TGFoursquareLocationDetail;
+			sourceTree = "<group>";
+		};
+		AC886805185FD80C0021F39D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AC886806185FD81F0021F39D /* iceland.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 			files = (
 				AC239351185E5DCE0039E6F8 /* Images.xcassets in Resources */,
 				AC239343185E5DCE0039E6F8 /* InfoPlist.strings in Resources */,
+				AC886807185FD81F0021F39D /* iceland.png in Resources */,
 				AC23934C185E5DCE0039E6F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +486,7 @@
 				AC239369185E5DCE0039E6F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC23936A185E5DCE0039E6F8 /* Build configuration list for PBXNativeTarget "TGFoursquareLocationDetail-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +495,7 @@
 				AC23936C185E5DCE0039E6F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

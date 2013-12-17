@@ -8,6 +8,43 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TGFoursquareLocationDetail : UIView
+@protocol TGFoursquareLocationDetailDelegate;
 
+@interface TGFoursquareLocationDetail : UIView <UIScrollViewDelegate>
+
+@property (nonatomic) CGFloat defaultJunkViewHeight;
+
+/**
+ How fast is the table view scrolling with the image picker
+*/
+@property (nonatomic) CGFloat parallaxScrollFactor;
+
+@property (nonatomic, strong) UIImageView *junkView;
+
+@property (nonatomic) CGRect defaultJunkViewFrame;
+
+@property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) UIView *backgroundView;
+
+@property (nonatomic, strong) UIColor *backgroundViewColor;
+
+@property (nonatomic, weak) id<UITableViewDataSource> tableViewDataSource;
+
+@property (nonatomic, weak) id<UITableViewDelegate> tableViewDelegate;
+
+@property (nonatomic, weak) id<TGFoursquareLocationDetailDelegate> delegate;
+
+
+@end
+
+@protocol TGFoursquareLocationDetailDelegate <NSObject>
+
+@optional
+
+- (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
+        junkViewDidLoad:(UIImageView *)junkView;
+
+- (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
+      tableViewDidLoad:(UITableView *)tableView;
 @end
