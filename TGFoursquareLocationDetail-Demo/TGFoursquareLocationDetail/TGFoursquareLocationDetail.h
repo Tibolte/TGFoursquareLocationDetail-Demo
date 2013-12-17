@@ -19,6 +19,8 @@
 */
 @property (nonatomic) CGFloat parallaxScrollFactor;
 
+@property (nonatomic) CGFloat headerFade;
+
 @property (nonatomic, strong) UIImageView *junkView;
 
 @property (nonatomic) CGRect defaultJunkViewFrame;
@@ -28,6 +30,8 @@
 @property (nonatomic, strong) UIView *backgroundView;
 
 @property (nonatomic, strong) UIColor *backgroundViewColor;
+
+@property (nonatomic, strong) UIView *headerView;
 
 @property (nonatomic, weak) id<UITableViewDataSource> tableViewDataSource;
 
@@ -47,4 +51,7 @@
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
       tableViewDidLoad:(UITableView *)tableView;
+
+- (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
+      headerViewDidLoad:(UIView *)headerView;
 @end

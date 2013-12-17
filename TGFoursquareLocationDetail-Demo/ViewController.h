@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) TGFoursquareLocationDetail *locationDetail;
 
+@property (weak, nonatomic) IBOutlet UIView *headerView;
+@property (weak, nonatomic) IBOutlet UILabel *headerTitle;
 @end

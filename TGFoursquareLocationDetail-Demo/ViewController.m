@@ -28,8 +28,23 @@
     
     [self.view addSubview:self.locationDetail];
     
-    //self.navigationController.navigationBar.translucent = NO;
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:79/255.0 green:195/255.0 blue:212/255.0 alpha:1.0]];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    [self.view bringSubviewToFront:_headerView];
+    
+    UIButton *buttonBack = [UIButton buttonWithType:UIButtonTypeCustom];
+    buttonBack.frame = CGRectMake(10, 22, 44, 44);
+    [buttonBack setImage:[UIImage imageNamed:@"btn_back"] forState:UIControlStateNormal];
+    [buttonBack addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:buttonBack];
+    
+    UIButton *buttonPost = [UIButton buttonWithType:UIButtonTypeCustom];
+    buttonPost.frame = CGRectMake(self.view.bounds.size.width - 44, 18, 44, 44);
+    [buttonPost setImage:[UIImage imageNamed:@"btn_post"] forState:UIControlStateNormal];
+    [buttonPost addTarget:self action:@selector(post) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:buttonPost];
+    
+    self.locationDetail.headerView = _headerView;
 
 }
 
@@ -72,6 +87,24 @@
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail tableViewDidLoad:(UITableView *)tableView
 {
     tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+}
+
+- (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail headerViewDidLoad:(UIView *)headerView
+{
+    [headerView setAlpha:0.0];
+    [headerView setHidden:YES];
+}
+
+#pragma mark - Button actions
+
+- (void)back
+{
+    NSLog(@"Here you should go back to previous view controller");
+}
+
+- (void)post
+{
+    NSLog(@"Post action");
 }
 
 - (void)didReceiveMemoryWarning

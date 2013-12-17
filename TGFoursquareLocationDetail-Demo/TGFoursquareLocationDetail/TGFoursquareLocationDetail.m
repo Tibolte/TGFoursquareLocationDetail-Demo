@@ -41,6 +41,7 @@
 {
     _defaultJunkViewHeight          = 130.0f;
     _parallaxScrollFactor           = 0.6f;
+    _headerFade = 130.0f;
     self.autoresizesSubviews        = YES;
     self.autoresizingMask           = UIViewAutoresizingFlexibleWidth |
     UIViewAutoresizingFlexibleHeight;
@@ -135,6 +136,15 @@
     }
 }
 
+- (void)setHeaderView:(UIView *)headerView
+{
+    _headerView = headerView;
+    
+    if([self.delegate respondsToSelector:@selector(locationDetail:headerViewDidLoad:)]){
+        [self.delegate locationDetail:self headerViewDidLoad:self.headerView];
+    }
+}
+
 #pragma mark - KVO Methods
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
@@ -173,6 +183,23 @@
             junkViewFrameYAdjustment = -(self.defaultJunkViewFrame.size.height);
         }
 
+    }
+    
+    //NSLog(@"scrollOffset: %f",scrollOffset);
+    
+    if(scrollOffset > _headerFade && _headerView.alpha == 0.0){ //make the header appear
+        _headerView.alpha = 0;
+        _headerView.hidden = NO;
+        [UIView animateWithDuration:0.3 animations:^{
+            _headerView.alpha = 1;
+        }];
+    }
+    else if(scrollOffset < _headerFade && _headerView.alpha == 1.0){ //make the header disappear
+        [UIView animateWithDuration:0.3 animations:^{
+            _headerView.alpha = 0;
+        } completion: ^(BOOL finished) {
+            _headerView.hidden = YES;
+        }];
     }
     
     if (junkViewFrameYAdjustment) {
