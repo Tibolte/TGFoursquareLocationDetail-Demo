@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TGFoursquareLocationDetail.h"
+#import "DetailLocationCell.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,TGFoursquareLocationDetailDelegate>
 

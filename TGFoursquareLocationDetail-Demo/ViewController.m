@@ -50,6 +50,15 @@
 
 #pragma mark - UITableView
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.row == 0){
+        return 138.0f;
+    }
+    else
+        return 30.0f;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 20;
@@ -57,14 +66,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reusable"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reusable"];
+    
+    if(indexPath.row == 0){
+        DetailLocationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailLocationCell"];
+        
+        if(cell == nil){
+            cell = [DetailLocationCell detailLocationCell];
+        }
+        return cell;
     }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
-    
-    return cell;
+    else{
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reusable"];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reusable"];
+        }
+        
+        cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+        
+        return cell;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

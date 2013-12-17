@@ -12,4 +12,11 @@
 
 + (DetailLocationCell*) detailLocationCell;
 
+@property (weak, nonatomic) IBOutlet UIView *viewRate;
+@property (weak, nonatomic) IBOutlet UILabel *lblRate;
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lblDescription;
+@property (weak, nonatomic) IBOutlet UIButton *btnSave;
+@property (weak, nonatomic) IBOutlet UIButton *btnCheckin;
+@property (weak, nonatomic) IBOutlet UIButton *btnMore;
 @end
