@@ -114,7 +114,7 @@
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail junkViewDidLoad:(UIImageView *)junkView
 {
-    junkView.image = [UIImage imageNamed:@"iceland"];
+    junkView.image = [UIImage imageNamed:@"einstock.jpg"];
 }
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail tableViewDidLoad:(UITableView *)tableView
