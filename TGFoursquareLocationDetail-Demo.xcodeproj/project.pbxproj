@@ -31,9 +31,9 @@
 		AC2A27B51860D50A0008BA46 /* DetailLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2A27B41860D50A0008BA46 /* DetailLocationCell.xib */; };
 		AC2A27BC1860DFA20008BA46 /* btn_round_next.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2A27BA1860DFA20008BA46 /* btn_round_next.png */; };
 		AC2A27BD1860DFA20008BA46 /* btn_round_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2A27BB1860DFA20008BA46 /* btn_round_next@2x.png */; };
+		AC6E06DE186276C4008B495F /* AddressLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6E06DD186276C4008B495F /* AddressLocationCell.xib */; };
 		AC886807185FD81F0021F39D /* iceland.png in Resources */ = {isa = PBXBuildFile; fileRef = AC886806185FD81F0021F39D /* iceland.png */; };
 		ACBDFB011860FA55002B10BF /* AddressLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDFB001860FA55002B10BF /* AddressLocationCell.m */; };
-		ACBDFB031860FAC0002B10BF /* AddressLocationDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACBDFB021860FAC0002B10BF /* AddressLocationDetail.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,10 +78,10 @@
 		AC2A27B41860D50A0008BA46 /* DetailLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailLocationCell.xib; path = Cell/DetailLocationCell.xib; sourceTree = "<group>"; };
 		AC2A27BA1860DFA20008BA46 /* btn_round_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_round_next.png; path = Images/btn_round_next.png; sourceTree = "<group>"; };
 		AC2A27BB1860DFA20008BA46 /* btn_round_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_round_next@2x.png"; path = "Images/btn_round_next@2x.png"; sourceTree = "<group>"; };
+		AC6E06DD186276C4008B495F /* AddressLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddressLocationCell.xib; path = Cell/AddressLocationCell.xib; sourceTree = "<group>"; };
 		AC886806185FD81F0021F39D /* iceland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iceland.png; path = Images/iceland.png; sourceTree = "<group>"; };
 		ACBDFAFF1860FA55002B10BF /* AddressLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressLocationCell.h; path = Cell/AddressLocationCell.h; sourceTree = "<group>"; };
 		ACBDFB001860FA55002B10BF /* AddressLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressLocationCell.m; path = Cell/AddressLocationCell.m; sourceTree = "<group>"; };
-		ACBDFB021860FAC0002B10BF /* AddressLocationDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddressLocationDetail.xib; path = Cell/AddressLocationDetail.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +202,7 @@
 				AC2A27B41860D50A0008BA46 /* DetailLocationCell.xib */,
 				ACBDFAFF1860FA55002B10BF /* AddressLocationCell.h */,
 				ACBDFB001860FA55002B10BF /* AddressLocationCell.m */,
-				ACBDFB021860FAC0002B10BF /* AddressLocationDetail.xib */,
+				AC6E06DD186276C4008B495F /* AddressLocationCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -306,8 +306,8 @@
 				AC886807185FD81F0021F39D /* iceland.png in Resources */,
 				AC2A27BC1860DFA20008BA46 /* btn_round_next.png in Resources */,
 				AC23934C185E5DCE0039E6F8 /* Main.storyboard in Resources */,
+				AC6E06DE186276C4008B495F /* AddressLocationCell.xib in Resources */,
 				AC2A27B51860D50A0008BA46 /* DetailLocationCell.xib in Resources */,
-				ACBDFB031860FAC0002B10BF /* AddressLocationDetail.xib in Resources */,
 				AC2A27AD1860D2090008BA46 /* btn_back@2x.png in Resources */,
 				AC2A27A31860CCBE0008BA46 /* btn_back.png in Resources */,
 			);

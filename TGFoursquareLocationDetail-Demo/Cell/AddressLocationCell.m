@@ -10,6 +10,13 @@
 
 @implementation AddressLocationCell
 
++ (AddressLocationCell*) addressLocationDetailCell
+{
+    AddressLocationCell * cell = [[[NSBundle mainBundle] loadNibNamed:@"AddressLocationCell" owner:self options:nil] objectAtIndex:0];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

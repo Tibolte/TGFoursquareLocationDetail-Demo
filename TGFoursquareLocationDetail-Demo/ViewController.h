@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 #import "TGFoursquareLocationDetail.h"
 #import "DetailLocationCell.h"
+#import "AddressLocationCell.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,TGFoursquareLocationDetailDelegate>
+@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,TGFoursquareLocationDetailDelegate>
 
 @property (nonatomic, strong) TGFoursquareLocationDetail *locationDetail;
 

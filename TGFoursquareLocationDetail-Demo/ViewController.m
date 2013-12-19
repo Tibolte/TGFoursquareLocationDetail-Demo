@@ -55,6 +55,9 @@
     if(indexPath.row == 0){
         return 138.0f;
     }
+    else if(indexPath.row == 1){
+        return 130.0f;
+    }
     else
         return 30.0f;
 }
@@ -73,6 +76,16 @@
         if(cell == nil){
             cell = [DetailLocationCell detailLocationCell];
         }
+        return cell;
+    }
+    else if(indexPath.row == 1){
+        AddressLocationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addressLocationDetail"];
+
+        if(cell == nil){
+            cell = [AddressLocationCell addressLocationDetailCell];
+        }
+        
+        
         return cell;
     }
     else{

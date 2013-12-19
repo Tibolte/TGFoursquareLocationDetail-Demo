@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B78FF83-56DE-4472-9022-6896F0A75FD3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TGFoursquareLocationDetail-Demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>90C4C9F7-22BB-4C34-BBBD-C5BD2C1F0A00</key>
+		<string>https://github.com/Tibolte/TGFoursquareLocationDetail-Demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TGFoursquareLocationDetail-Demo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>90C4C9F7-22BB-4C34-BBBD-C5BD2C1F0A00</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Tibolte/TGFoursquareLocationDetail-Demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>90C4C9F7-22BB-4C34-BBBD-C5BD2C1F0A00</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>90C4C9F7-22BB-4C34-BBBD-C5BD2C1F0A00</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TGFoursquareLocationDetail-Demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

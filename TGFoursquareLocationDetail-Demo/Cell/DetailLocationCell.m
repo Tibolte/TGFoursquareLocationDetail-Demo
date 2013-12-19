@@ -13,6 +13,7 @@
 + (DetailLocationCell*) detailLocationCell
 {
     DetailLocationCell * cell = [[[NSBundle mainBundle] loadNibNamed:@"DetailLocationCell" owner:self options:nil] objectAtIndex:0];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

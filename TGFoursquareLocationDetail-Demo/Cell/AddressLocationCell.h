@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface AddressLocationCell : UITableViewCell
+
++ (AddressLocationCell*) addressLocationDetailCell;
 
 @end
