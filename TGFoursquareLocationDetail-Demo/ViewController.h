@@ -11,10 +11,12 @@
 #import "TGFoursquareLocationDetail.h"
 #import "DetailLocationCell.h"
 #import "AddressLocationCell.h"
+#import "TGAnnotation.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,TGFoursquareLocationDetailDelegate>
 
 @property (nonatomic, strong) TGFoursquareLocationDetail *locationDetail;
+@property (nonatomic, strong) MKMapView *map;
 
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UILabel *headerTitle;

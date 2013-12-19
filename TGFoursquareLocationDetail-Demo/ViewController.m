@@ -52,11 +52,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row == 0){
+    if(indexPath.row == 0 && indexPath.section == 0){
         return 138.0f;
     }
-    else if(indexPath.row == 1){
-        return 130.0f;
+    else if(indexPath.row == 0 && indexPath.section == 1){
+        return 171.0f;
     }
     else
         return 30.0f;
@@ -64,13 +64,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    if(section == 0)
+        return 1;
+    else return 1;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    if(indexPath.row == 0){
+    if(indexPath.row == 0 && indexPath.section == 0){
         DetailLocationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailLocationCell"];
         
         if(cell == nil){
@@ -78,14 +85,34 @@
         }
         return cell;
     }
-    else if(indexPath.row == 1){
+    else if(indexPath.row == 0 && indexPath.section == 1){
         AddressLocationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addressLocationDetail"];
 
         if(cell == nil){
             cell = [AddressLocationCell addressLocationDetailCell];
+            _map = [[MKMapView alloc] initWithFrame:CGRectMake(219, 0, 101, 171)];
+            _map.userInteractionEnabled = FALSE;
+            _map.delegate = self;
+            MKCoordinateRegion myRegion;
+            
+            myRegion.center.latitude = 64.135338;
+            myRegion.center.longitude = -21.895210;
+            
+            // this sets the zoom level, a smaller value like 0.02
+            // zooms in, a larger value like 80.0 zooms out
+            myRegion.span.latitudeDelta = 0.2;
+            myRegion.span.longitudeDelta = 0.2;
+            
+            // move the map to our location
+            [_map setRegion:myRegion animated:YES];
+            
+            //annotation
+            TGAnnotation *annot = [[TGAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(64.135338, -21.895210)];
+            [_map addAnnotation:annot];
+            
+            [cell.contentView addSubview:_map];
         }
-        
-        
+
         return cell;
     }
     else{
@@ -126,6 +153,33 @@
 {
     [headerView setAlpha:0.0];
     [headerView setHidden:YES];
+}
+
+#pragma mark - MKMap View methods
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    if (annotation == mapView.userLocation)
+        return nil;
+    
+    static NSString *MyPinAnnotationIdentifier = @"Pin";
+    MKPinAnnotationView *pinView =
+    (MKPinAnnotationView *) [self.map dequeueReusableAnnotationViewWithIdentifier:MyPinAnnotationIdentifier];
+    if (!pinView){
+        MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
+                                                                        reuseIdentifier:MyPinAnnotationIdentifier];
+        
+        annotationView.image = [UIImage imageNamed:@"pin_map_blue"];
+        
+        return annotationView;
+        
+    }else{
+        
+        pinView.image = [UIImage imageNamed:@"pin_map_blue"];
+        
+        return pinView;
+    }
+    
+    return nil;
 }
 
 #pragma mark - Button actions
