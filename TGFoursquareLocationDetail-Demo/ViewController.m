@@ -52,11 +52,14 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row == 0 && indexPath.section == 0){
+    if(indexPath.row == 0){
         return 138.0f;
     }
-    else if(indexPath.row == 0 && indexPath.section == 1){
+    else if(indexPath.row == 1){
         return 171.0f;
+    }
+    else if(indexPath.row == 2){
+        return 138.0f;
     }
     else
         return 30.0f;
@@ -64,20 +67,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if(section == 0)
-        return 1;
-    else return 1;
+    return 3;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    if(indexPath.row == 0 && indexPath.section == 0){
+    if(indexPath.row == 0){
         DetailLocationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailLocationCell"];
         
         if(cell == nil){
@@ -85,7 +86,7 @@
         }
         return cell;
     }
-    else if(indexPath.row == 0 && indexPath.section == 1){
+    else if(indexPath.row == 1){
         AddressLocationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addressLocationDetail"];
 
         if(cell == nil){
@@ -113,6 +114,14 @@
             [cell.contentView addSubview:_map];
         }
 
+        return cell;
+    }
+    else if(indexPath.row == 2){
+        UserCell *cell = [tableView dequeueReusableCellWithIdentifier:@"userCell"];
+        
+        if(cell == nil){
+            cell = [UserCell userCell];
+        }
         return cell;
     }
     else{

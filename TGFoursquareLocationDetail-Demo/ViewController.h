@@ -11,6 +11,7 @@
 #import "TGFoursquareLocationDetail.h"
 #import "DetailLocationCell.h"
 #import "AddressLocationCell.h"
+#import "UserCell.h"
 #import "TGAnnotation.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,TGFoursquareLocationDetailDelegate>

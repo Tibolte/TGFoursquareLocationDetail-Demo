@@ -40,6 +40,8 @@
 		AC71B63B1863980300C0440D /* TGAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC71B63A1863980300C0440D /* TGAnnotation.m */; };
 		AC71B63E18639C0D00C0440D /* pin_map_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AC71B63C18639C0D00C0440D /* pin_map_blue.png */; };
 		AC71B63F18639C0D00C0440D /* pin_map_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC71B63D18639C0D00C0440D /* pin_map_blue@2x.png */; };
+		ACAAD3F61878349B00FBDB9E /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAAD3F51878349B00FBDB9E /* UserCell.m */; };
+		ACAAD3F8187834BC00FBDB9E /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAAD3F7187834BC00FBDB9E /* UserCell.xib */; };
 		ACBDFB011860FA55002B10BF /* AddressLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDFB001860FA55002B10BF /* AddressLocationCell.m */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,9 @@
 		AC71B63A1863980300C0440D /* TGAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TGAnnotation.m; path = Utils/TGAnnotation.m; sourceTree = "<group>"; };
 		AC71B63C18639C0D00C0440D /* pin_map_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin_map_blue.png; path = Images/pin_map_blue.png; sourceTree = "<group>"; };
 		AC71B63D18639C0D00C0440D /* pin_map_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pin_map_blue@2x.png"; path = "Images/pin_map_blue@2x.png"; sourceTree = "<group>"; };
+		ACAAD3F41878349B00FBDB9E /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserCell.h; path = Cell/UserCell.h; sourceTree = "<group>"; };
+		ACAAD3F51878349B00FBDB9E /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserCell.m; path = Cell/UserCell.m; sourceTree = "<group>"; };
+		ACAAD3F7187834BC00FBDB9E /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserCell.xib; path = Cell/UserCell.xib; sourceTree = "<group>"; };
 		ACBDFAFF1860FA55002B10BF /* AddressLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressLocationCell.h; path = Cell/AddressLocationCell.h; sourceTree = "<group>"; };
 		ACBDFB001860FA55002B10BF /* AddressLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressLocationCell.m; path = Cell/AddressLocationCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,6 +224,9 @@
 				ACBDFAFF1860FA55002B10BF /* AddressLocationCell.h */,
 				ACBDFB001860FA55002B10BF /* AddressLocationCell.m */,
 				AC6E06DD186276C4008B495F /* AddressLocationCell.xib */,
+				ACAAD3F41878349B00FBDB9E /* UserCell.h */,
+				ACAAD3F51878349B00FBDB9E /* UserCell.m */,
+				ACAAD3F7187834BC00FBDB9E /* UserCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -332,6 +340,7 @@
 				AC2A27AE1860D2090008BA46 /* btn_post.png in Resources */,
 				AC71B63F18639C0D00C0440D /* pin_map_blue@2x.png in Resources */,
 				AC2A27A11860C4D80008BA46 /* ViewController.xib in Resources */,
+				ACAAD3F8187834BC00FBDB9E /* UserCell.xib in Resources */,
 				AC71B63618638F9C00C0440D /* icon_phone.png in Resources */,
 				AC2A27AF1860D2090008BA46 /* btn_post@2x.png in Resources */,
 				AC2A27BD1860DFA20008BA46 /* btn_round_next@2x.png in Resources */,
@@ -369,6 +378,7 @@
 				AC23934F185E5DCE0039E6F8 /* ViewController.m in Sources */,
 				ACBDFB011860FA55002B10BF /* AddressLocationCell.m in Sources */,
 				AC239349185E5DCE0039E6F8 /* AppDelegate.m in Sources */,
+				ACAAD3F61878349B00FBDB9E /* UserCell.m in Sources */,
 				AC239345185E5DCE0039E6F8 /* main.m in Sources */,
 				AC239370185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m in Sources */,
 				AC2A27B31860D4E20008BA46 /* DetailLocationCell.m in Sources */,
