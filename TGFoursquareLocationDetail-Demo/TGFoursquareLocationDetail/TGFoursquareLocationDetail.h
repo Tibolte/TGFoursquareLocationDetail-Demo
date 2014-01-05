@@ -25,6 +25,8 @@
 
 @property (nonatomic) CGRect defaultJunkViewFrame;
 
+@property (nonatomic, strong) UIScrollView *imagesScrollView;
+
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) UIView *backgroundView;
@@ -39,12 +41,14 @@
 
 @property (nonatomic, weak) id<TGFoursquareLocationDetailDelegate> delegate;
 
-
 @end
 
 @protocol TGFoursquareLocationDetailDelegate <NSObject>
 
 @optional
+
+- (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
+       imagesScrollViewDidLoad:(UIScrollView *)imagesScrollView;
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
         junkViewDidLoad:(UIImageView *)junkView;

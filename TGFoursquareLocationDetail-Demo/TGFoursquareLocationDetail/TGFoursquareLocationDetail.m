@@ -41,11 +41,11 @@
 {
     _defaultJunkViewHeight          = 130.0f;
     _parallaxScrollFactor           = 0.6f;
-    _headerFade = 130.0f;
+    _headerFade                     = 130.0f;
     self.autoresizesSubviews        = YES;
     self.autoresizingMask           = UIViewAutoresizingFlexibleWidth |
     UIViewAutoresizingFlexibleHeight;
-    self.backgroundViewColor = [UIColor clearColor];
+    self.backgroundViewColor        = [UIColor clearColor];
 }
 
 - (void)layoutSubviews
@@ -90,6 +90,10 @@
         if([self.delegate respondsToSelector:@selector(locationDetail:junkViewDidLoad:)]){
             [self.delegate locationDetail:self junkViewDidLoad:self.junkView];
         }
+
+    }
+    
+    if(!self.imagesScrollView){
 
     }
     
