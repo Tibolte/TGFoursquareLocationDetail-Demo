@@ -62,12 +62,12 @@
         return 138.0f;
     }
     else
-        return 30.0f;
+        return 100.0f; //cell for comments, in reality the height has to be adjustable
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 5;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -121,6 +121,26 @@
         
         if(cell == nil){
             cell = [UserCell userCell];
+        }
+        return cell;
+    }
+    else if(indexPath.row == 3){
+        TipCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tipCell"];
+        
+        if(cell == nil){
+            cell = [TipCell tipCell];
+            cell.titleLbl.text = @"Eymundsson says:";
+            cell.contentLbl.text = @"The city of Reykjavik, Iceland, has been designated as UNESCO City of Literature. How great is that!";
+        }
+        return cell;
+    }
+    else if(indexPath.row == 4){
+        TipCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tipCell"];
+        
+        if(cell == nil){
+            cell = [TipCell tipCell];
+            cell.titleLbl.text = @"Brian B. says:";
+            cell.contentLbl.text = @"Awesome City and Country, great people...";
         }
         return cell;
     }

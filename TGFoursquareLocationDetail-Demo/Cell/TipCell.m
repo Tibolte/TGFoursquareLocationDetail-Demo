@@ -1,18 +1,18 @@
 //
-//  UserCell.m
+//  TipCell.m
 //  TGFoursquareLocationDetail-Demo
 //
-//  Created by Thibault Guégan on 04/01/2014.
+//  Created by Thibault Guégan on 05/01/2014.
 //  Copyright (c) 2014 Thibault Guégan. All rights reserved.
 //
 
-#import "UserCell.h"
+#import "TipCell.h"
 
-@implementation UserCell
+@implementation TipCell
 
-+ (UserCell*) userCell
++ (TipCell*) tipCell
 {
-    UserCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"UserCell" owner:self options:nil] objectAtIndex:0];
+    TipCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TipCell" owner:self options:nil] objectAtIndex:0];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -21,23 +21,17 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        _userImg.layer.cornerRadius = 25.0f;
-        _userImg.image = [UIImage imageNamed:@"icon_user"];
+        // Initialization code
     }
     return self;
-}
-
-- (void)awakeFromNib
-{
-    _userImg.layer.cornerRadius = 25.0f;
-    _userImg.image = [UIImage imageNamed:@"icon_user"];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-    
+
     // Configure the view for the selected state
 }
+
 
 @end

@@ -40,6 +40,10 @@
 		AC71B63B1863980300C0440D /* TGAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC71B63A1863980300C0440D /* TGAnnotation.m */; };
 		AC71B63E18639C0D00C0440D /* pin_map_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AC71B63C18639C0D00C0440D /* pin_map_blue.png */; };
 		AC71B63F18639C0D00C0440D /* pin_map_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC71B63D18639C0D00C0440D /* pin_map_blue@2x.png */; };
+		ACA90C9C18799C81001E9363 /* icon_user.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA90C9A18799C81001E9363 /* icon_user.png */; };
+		ACA90C9D18799C81001E9363 /* icon_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA90C9B18799C81001E9363 /* icon_user@2x.png */; };
+		ACA90CA018799FAE001E9363 /* TipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA90C9F18799FAE001E9363 /* TipCell.m */; };
+		ACA90CA21879A0C2001E9363 /* TipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA90CA11879A0C2001E9363 /* TipCell.xib */; };
 		ACAAD3F61878349B00FBDB9E /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAAD3F51878349B00FBDB9E /* UserCell.m */; };
 		ACAAD3F8187834BC00FBDB9E /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAAD3F7187834BC00FBDB9E /* UserCell.xib */; };
 		ACBDFB011860FA55002B10BF /* AddressLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDFB001860FA55002B10BF /* AddressLocationCell.m */; };
@@ -97,6 +101,11 @@
 		AC71B63A1863980300C0440D /* TGAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TGAnnotation.m; path = Utils/TGAnnotation.m; sourceTree = "<group>"; };
 		AC71B63C18639C0D00C0440D /* pin_map_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin_map_blue.png; path = Images/pin_map_blue.png; sourceTree = "<group>"; };
 		AC71B63D18639C0D00C0440D /* pin_map_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pin_map_blue@2x.png"; path = "Images/pin_map_blue@2x.png"; sourceTree = "<group>"; };
+		ACA90C9A18799C81001E9363 /* icon_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user.png; path = Images/icon_user.png; sourceTree = "<group>"; };
+		ACA90C9B18799C81001E9363 /* icon_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_user@2x.png"; path = "Images/icon_user@2x.png"; sourceTree = "<group>"; };
+		ACA90C9E18799FAE001E9363 /* TipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipCell.h; path = Cell/TipCell.h; sourceTree = "<group>"; };
+		ACA90C9F18799FAE001E9363 /* TipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipCell.m; path = Cell/TipCell.m; sourceTree = "<group>"; };
+		ACA90CA11879A0C2001E9363 /* TipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TipCell.xib; path = Cell/TipCell.xib; sourceTree = "<group>"; };
 		ACAAD3F41878349B00FBDB9E /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserCell.h; path = Cell/UserCell.h; sourceTree = "<group>"; };
 		ACAAD3F51878349B00FBDB9E /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserCell.m; path = Cell/UserCell.m; sourceTree = "<group>"; };
 		ACAAD3F7187834BC00FBDB9E /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserCell.xib; path = Cell/UserCell.xib; sourceTree = "<group>"; };
@@ -227,6 +236,9 @@
 				ACAAD3F41878349B00FBDB9E /* UserCell.h */,
 				ACAAD3F51878349B00FBDB9E /* UserCell.m */,
 				ACAAD3F7187834BC00FBDB9E /* UserCell.xib */,
+				ACA90C9E18799FAE001E9363 /* TipCell.h */,
+				ACA90C9F18799FAE001E9363 /* TipCell.m */,
+				ACA90CA11879A0C2001E9363 /* TipCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -243,6 +255,8 @@
 		AC886805185FD80C0021F39D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ACA90C9A18799C81001E9363 /* icon_user.png */,
+				ACA90C9B18799C81001E9363 /* icon_user@2x.png */,
 				AC71B63C18639C0D00C0440D /* pin_map_blue.png */,
 				AC71B63D18639C0D00C0440D /* pin_map_blue@2x.png */,
 				AC71B63418638F9C00C0440D /* icon_phone.png */,
@@ -336,6 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA90C9D18799C81001E9363 /* icon_user@2x.png in Resources */,
+				ACA90CA21879A0C2001E9363 /* TipCell.xib in Resources */,
 				AC71B62B18637C8D00C0440D /* einstock.jpg in Resources */,
 				AC2A27AE1860D2090008BA46 /* btn_post.png in Resources */,
 				AC71B63F18639C0D00C0440D /* pin_map_blue@2x.png in Resources */,
@@ -344,6 +360,7 @@
 				AC71B63618638F9C00C0440D /* icon_phone.png in Resources */,
 				AC2A27AF1860D2090008BA46 /* btn_post@2x.png in Resources */,
 				AC2A27BD1860DFA20008BA46 /* btn_round_next@2x.png in Resources */,
+				ACA90C9C18799C81001E9363 /* icon_user.png in Resources */,
 				AC239351185E5DCE0039E6F8 /* Images.xcassets in Resources */,
 				AC71B63718638F9C00C0440D /* icon_phone@2x.png in Resources */,
 				AC239343185E5DCE0039E6F8 /* InfoPlist.strings in Resources */,
@@ -380,6 +397,7 @@
 				AC239349185E5DCE0039E6F8 /* AppDelegate.m in Sources */,
 				ACAAD3F61878349B00FBDB9E /* UserCell.m in Sources */,
 				AC239345185E5DCE0039E6F8 /* main.m in Sources */,
+				ACA90CA018799FAE001E9363 /* TipCell.m in Sources */,
 				AC239370185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m in Sources */,
 				AC2A27B31860D4E20008BA46 /* DetailLocationCell.m in Sources */,
 			);
