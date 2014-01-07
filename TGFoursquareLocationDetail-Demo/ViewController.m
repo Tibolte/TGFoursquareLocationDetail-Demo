@@ -173,6 +173,16 @@
     junkView.image = [UIImage imageNamed:@"einstock.jpg"];
 }
 
+- (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail imagePagerDidLoad:(KIImagePager *)imagePager
+{
+    imagePager.dataSource = self;
+    imagePager.delegate = self;
+    imagePager.pageControl.currentPageIndicatorTintColor = [UIColor lightGrayColor];
+    imagePager.pageControl.pageIndicatorTintColor = [UIColor blackColor];
+    imagePager.slideshowTimeInterval = 0.0f;
+    imagePager.slideshowShouldCallScrollToDelegate = YES;
+}
+
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail tableViewDidLoad:(UITableView *)tableView
 {
     tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
@@ -209,6 +219,41 @@
     }
     
     return nil;
+}
+
+#pragma mark - KIImagePager DataSource
+- (NSArray *) arrayWithImages
+{
+    return @[
+             @"https://raw.github.com/kimar/tapebooth/master/Screenshots/Screen1.png",
+             @"https://raw.github.com/kimar/tapebooth/master/Screenshots/Screen2.png",
+             @"https://raw.github.com/kimar/tapebooth/master/Screenshots/Screen3.png"
+             ];
+}
+
+- (UIViewContentMode) contentModeForImage:(NSUInteger)image
+{
+    return UIViewContentModeScaleAspectFill;
+}
+
+- (NSString *) captionForImageAtIndex:(NSUInteger)index
+{
+    return @[
+             @"First screenshot",
+             @"Another screenshot",
+             @"Last one! ;-)"
+             ][index];
+}
+
+#pragma mark - KIImagePager Delegate
+- (void) imagePager:(KIImagePager *)imagePager didScrollToIndex:(NSUInteger)index
+{
+    NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
+}
+
+- (void) imagePager:(KIImagePager *)imagePager didSelectImageAtIndex:(NSUInteger)index
+{
+    NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
 }
 
 #pragma mark - Button actions

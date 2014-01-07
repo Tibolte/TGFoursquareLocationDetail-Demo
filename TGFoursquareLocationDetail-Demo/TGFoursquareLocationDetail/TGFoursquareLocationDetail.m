@@ -40,6 +40,7 @@
 - (void)initialize
 {
     _defaultJunkViewHeight          = 130.0f;
+    _defaultimagePagerHeight        = 220.0f;
     _parallaxScrollFactor           = 0.6f;
     _headerFade                     = 130.0f;
     self.autoresizesSubviews        = YES;
@@ -78,10 +79,19 @@
         UIView *tableHeaderView = [[UIView alloc] initWithFrame:tableHeaderViewFrame];
         tableHeaderView.backgroundColor = [UIColor clearColor];
         self.tableView.tableHeaderView = tableHeaderView;
+        
+//        UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(catchHeaderGesture:)];
+//        
+//        [swipeGesture setDirection:(UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight)];
+//
+//        
+//        swipeGesture.cancelsTouchesInView = YES;
+//        [self.tableView.tableHeaderView  addGestureRecognizer:swipeGesture];
+        
     }
     
     if(!self.junkView){
-        self.defaultJunkViewFrame = CGRectMake(0.0f, -self.defaultJunkViewHeight * self.parallaxScrollFactor * 2, self.tableView.frame.size.width, self.defaultJunkViewHeight + (self.defaultJunkViewHeight * self.parallaxScrollFactor * 4));
+        /*self.defaultJunkViewFrame = CGRectMake(0.0f, -self.defaultJunkViewHeight * self.parallaxScrollFactor * 2, self.tableView.frame.size.width, self.defaultJunkViewHeight + (self.defaultJunkViewHeight * self.parallaxScrollFactor * 4));
         _junkView = [[UIImageView alloc] initWithFrame:self.defaultJunkViewFrame];
         self.junkView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
@@ -89,12 +99,20 @@
         
         if([self.delegate respondsToSelector:@selector(locationDetail:junkViewDidLoad:)]){
             [self.delegate locationDetail:self junkViewDidLoad:self.junkView];
-        }
+        }*/
 
     }
     
-    if(!self.imagesScrollView){
-
+    if(!self.imagePager){
+        self.defaultimagePagerFrame = CGRectMake(0.0f, -self.defaultimagePagerHeight * self.parallaxScrollFactor * 2, self.tableView.frame.size.width, self.defaultimagePagerHeight + (self.defaultimagePagerHeight * self.parallaxScrollFactor * 4));
+        _imagePager = [[KIImagePager alloc] initWithFrame:self.defaultimagePagerFrame];
+        self.imagePager.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        
+        [self insertSubview:self.imagePager belowSubview:self.tableView];
+        
+        if([self.delegate respondsToSelector:@selector(locationDetail:imagePagerDidLoad:)]){
+            [self.delegate locationDetail:self imagePagerDidLoad:self.imagePager];
+        }
     }
     
     // Add the background tableView
@@ -110,6 +128,13 @@
     }
 
 }
+
+//-(void)catchHeaderGesture:(UIGestureRecognizer*)sender
+//{
+//    self.tableView.userInteractionEnabled = false;
+//    
+//    NSLog(@"header gesture");
+//}
 
 - (void)setTableViewDataSource:(id<UITableViewDataSource>)tableViewDataSource
 {
@@ -175,16 +200,16 @@
     
     // If the user is pulling down
     if (scrollOffset < 0) {
-        junkViewFrameYAdjustment = self.defaultJunkViewFrame.origin.y - (scrollOffset * self.parallaxScrollFactor);
+        junkViewFrameYAdjustment = self.defaultimagePagerFrame.origin.y - (scrollOffset * self.parallaxScrollFactor);
     }
     
     // If the user is scrolling normally,
     else {
-        junkViewFrameYAdjustment = self.defaultJunkViewFrame.origin.y - (scrollOffset * self.parallaxScrollFactor);
+        junkViewFrameYAdjustment = self.defaultimagePagerFrame.origin.y - (scrollOffset * self.parallaxScrollFactor);
         
         // Don't move the map way off-screen
-        if (junkViewFrameYAdjustment <= -(self.defaultJunkViewFrame.size.height)) {
-            junkViewFrameYAdjustment = -(self.defaultJunkViewFrame.size.height);
+        if (junkViewFrameYAdjustment <= -(self.defaultimagePagerFrame.size.height)) {
+            junkViewFrameYAdjustment = -(self.defaultimagePagerFrame.size.height);
         }
 
     }
@@ -207,9 +232,9 @@
     }
     
     if (junkViewFrameYAdjustment) {
-        CGRect newJunkViewFrame = self.junkView.frame;
+        CGRect newJunkViewFrame = self.imagePager.frame;
         newJunkViewFrame.origin.y = junkViewFrameYAdjustment;
-        self.junkView.frame = newJunkViewFrame;
+        self.imagePager.frame = newJunkViewFrame;
     }
 }
 

@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KIImagePager.h"
 
 @protocol TGFoursquareLocationDetailDelegate;
 
 @interface TGFoursquareLocationDetail : UIView <UIScrollViewDelegate>
 
 @property (nonatomic) CGFloat defaultJunkViewHeight;
+
+@property (nonatomic) CGFloat defaultimagePagerHeight;
 
 /**
  How fast is the table view scrolling with the image picker
@@ -25,7 +28,9 @@
 
 @property (nonatomic) CGRect defaultJunkViewFrame;
 
-@property (nonatomic, strong) UIScrollView *imagesScrollView;
+@property (nonatomic, strong) KIImagePager *imagePager;
+
+@property (nonatomic) CGRect defaultimagePagerFrame;
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -48,7 +53,7 @@
 @optional
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
-       imagesScrollViewDidLoad:(UIScrollView *)imagesScrollView;
+       imagePagerDidLoad:(KIImagePager *)imagePager;
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
         junkViewDidLoad:(UIImageView *)junkView;

@@ -47,6 +47,9 @@
 		ACAAD3F61878349B00FBDB9E /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAAD3F51878349B00FBDB9E /* UserCell.m */; };
 		ACAAD3F8187834BC00FBDB9E /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAAD3F7187834BC00FBDB9E /* UserCell.xib */; };
 		ACBDFB011860FA55002B10BF /* AddressLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBDFB001860FA55002B10BF /* AddressLocationCell.m */; };
+		ACF9B4DC187C9DEA00B5ED35 /* KIImagePager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF9B4DB187C9DEA00B5ED35 /* KIImagePager.m */; };
+		ACF9B4DF187C9E6700B5ED35 /* KICamera.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF9B4DD187C9E6700B5ED35 /* KICamera.png */; };
+		ACF9B4E0187C9E6700B5ED35 /* KICamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF9B4DE187C9E6700B5ED35 /* KICamera@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,10 @@
 		ACAAD3F7187834BC00FBDB9E /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserCell.xib; path = Cell/UserCell.xib; sourceTree = "<group>"; };
 		ACBDFAFF1860FA55002B10BF /* AddressLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressLocationCell.h; path = Cell/AddressLocationCell.h; sourceTree = "<group>"; };
 		ACBDFB001860FA55002B10BF /* AddressLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressLocationCell.m; path = Cell/AddressLocationCell.m; sourceTree = "<group>"; };
+		ACF9B4DA187C9DEA00B5ED35 /* KIImagePager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KIImagePager.h; path = TGFoursquareLocationDetail/KIImagePager/KIImagePager.h; sourceTree = "<group>"; };
+		ACF9B4DB187C9DEA00B5ED35 /* KIImagePager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIImagePager.m; path = TGFoursquareLocationDetail/KIImagePager/KIImagePager.m; sourceTree = "<group>"; };
+		ACF9B4DD187C9E6700B5ED35 /* KICamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KICamera.png; path = Images/KICamera.png; sourceTree = "<group>"; };
+		ACF9B4DE187C9E6700B5ED35 /* KICamera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "KICamera@2x.png"; path = "Images/KICamera@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +225,7 @@
 		AC23936D185E5E160039E6F8 /* TGFoursquareLocationDetail */ = {
 			isa = PBXGroup;
 			children = (
+				ACF9B4D9187C9D6A00B5ED35 /* KIImagePager */,
 				AC23936E185E5FAF0039E6F8 /* TGFoursquareLocationDetail.h */,
 				AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */,
 			);
@@ -255,6 +263,8 @@
 		AC886805185FD80C0021F39D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ACF9B4DD187C9E6700B5ED35 /* KICamera.png */,
+				ACF9B4DE187C9E6700B5ED35 /* KICamera@2x.png */,
 				ACA90C9A18799C81001E9363 /* icon_user.png */,
 				ACA90C9B18799C81001E9363 /* icon_user@2x.png */,
 				AC71B63C18639C0D00C0440D /* pin_map_blue.png */,
@@ -272,6 +282,15 @@
 				AC2A27A21860CCBE0008BA46 /* btn_back.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		ACF9B4D9187C9D6A00B5ED35 /* KIImagePager */ = {
+			isa = PBXGroup;
+			children = (
+				ACF9B4DA187C9DEA00B5ED35 /* KIImagePager.h */,
+				ACF9B4DB187C9DEA00B5ED35 /* KIImagePager.m */,
+			);
+			name = KIImagePager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +373,8 @@
 				ACA90CA21879A0C2001E9363 /* TipCell.xib in Resources */,
 				AC71B62B18637C8D00C0440D /* einstock.jpg in Resources */,
 				AC2A27AE1860D2090008BA46 /* btn_post.png in Resources */,
+				ACF9B4DF187C9E6700B5ED35 /* KICamera.png in Resources */,
+				ACF9B4E0187C9E6700B5ED35 /* KICamera@2x.png in Resources */,
 				AC71B63F18639C0D00C0440D /* pin_map_blue@2x.png in Resources */,
 				AC2A27A11860C4D80008BA46 /* ViewController.xib in Resources */,
 				ACAAD3F8187834BC00FBDB9E /* UserCell.xib in Resources */,
@@ -396,6 +417,7 @@
 				ACBDFB011860FA55002B10BF /* AddressLocationCell.m in Sources */,
 				AC239349185E5DCE0039E6F8 /* AppDelegate.m in Sources */,
 				ACAAD3F61878349B00FBDB9E /* UserCell.m in Sources */,
+				ACF9B4DC187C9DEA00B5ED35 /* KIImagePager.m in Sources */,
 				AC239345185E5DCE0039E6F8 /* main.m in Sources */,
 				ACA90CA018799FAE001E9363 /* TipCell.m in Sources */,
 				AC239370185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m in Sources */,

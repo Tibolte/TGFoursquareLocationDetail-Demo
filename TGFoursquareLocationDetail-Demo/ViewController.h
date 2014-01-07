@@ -15,7 +15,7 @@
 #import "TipCell.h"
 #import "TGAnnotation.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,TGFoursquareLocationDetailDelegate>
+@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,TGFoursquareLocationDetailDelegate, KIImagePagerDelegate, KIImagePagerDataSource>
 
 @property (nonatomic, strong) TGFoursquareLocationDetail *locationDetail;
 @property (nonatomic, strong) MKMapView *map;
