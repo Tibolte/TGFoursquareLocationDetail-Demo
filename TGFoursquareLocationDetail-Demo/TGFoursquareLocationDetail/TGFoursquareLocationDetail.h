@@ -13,8 +13,6 @@
 
 @interface TGFoursquareLocationDetail : UIView <UIScrollViewDelegate>
 
-@property (nonatomic) CGFloat defaultJunkViewHeight;
-
 @property (nonatomic) CGFloat defaultimagePagerHeight;
 
 /**
@@ -24,11 +22,11 @@
 
 @property (nonatomic) CGFloat headerFade;
 
-@property (nonatomic, strong) UIImageView *junkView;
-
-@property (nonatomic) CGRect defaultJunkViewFrame;
-
 @property (nonatomic, strong) KIImagePager *imagePager;
+
+@property (nonatomic) int nbImages;
+
+@property (nonatomic) int currentImage;
 
 @property (nonatomic) CGRect defaultimagePagerFrame;
 
@@ -54,9 +52,6 @@
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
        imagePagerDidLoad:(KIImagePager *)imagePager;
-
-- (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
-        junkViewDidLoad:(UIImageView *)junkView;
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail
       tableViewDidLoad:(UITableView *)tableView;

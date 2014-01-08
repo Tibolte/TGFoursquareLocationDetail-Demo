@@ -39,8 +39,7 @@
 
 - (void)initialize
 {
-    _defaultJunkViewHeight          = 130.0f;
-    _defaultimagePagerHeight        = 220.0f;
+    _defaultimagePagerHeight        = 180.0f;
     _parallaxScrollFactor           = 0.6f;
     _headerFade                     = 130.0f;
     self.autoresizesSubviews        = YES;
@@ -75,38 +74,30 @@
     }
     
     if (!self.tableView.tableHeaderView) {
-        CGRect tableHeaderViewFrame = CGRectMake(0.0, 0.0, self.tableView.frame.size.width, self.defaultJunkViewHeight);
+        CGRect tableHeaderViewFrame = CGRectMake(0.0, 0.0, self.tableView.frame.size.width, self.defaultimagePagerHeight);
         UIView *tableHeaderView = [[UIView alloc] initWithFrame:tableHeaderViewFrame];
         tableHeaderView.backgroundColor = [UIColor clearColor];
         self.tableView.tableHeaderView = tableHeaderView;
         
-//        UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(catchHeaderGesture:)];
-//        
-//        [swipeGesture setDirection:(UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight)];
-//
-//        
-//        swipeGesture.cancelsTouchesInView = YES;
-//        [self.tableView.tableHeaderView  addGestureRecognizer:swipeGesture];
+        UISwipeGestureRecognizer *swipeGestureRight = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(catchHeaderGestureRight:)];
+        swipeGestureRight.direction = UISwipeGestureRecognizerDirectionRight ;
+        swipeGestureRight.cancelsTouchesInView = YES;
         
-    }
-    
-    if(!self.junkView){
-        /*self.defaultJunkViewFrame = CGRectMake(0.0f, -self.defaultJunkViewHeight * self.parallaxScrollFactor * 2, self.tableView.frame.size.width, self.defaultJunkViewHeight + (self.defaultJunkViewHeight * self.parallaxScrollFactor * 4));
-        _junkView = [[UIImageView alloc] initWithFrame:self.defaultJunkViewFrame];
-        self.junkView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        UISwipeGestureRecognizer *swipeGestureLeft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(catchHeaderGestureLeft:)];
+        swipeGestureLeft.direction = UISwipeGestureRecognizerDirectionLeft ;
+        swipeGestureLeft.cancelsTouchesInView = YES;
         
-        [self insertSubview:self.junkView belowSubview:self.tableView];
-        
-        if([self.delegate respondsToSelector:@selector(locationDetail:junkViewDidLoad:)]){
-            [self.delegate locationDetail:self junkViewDidLoad:self.junkView];
-        }*/
-
+        [self.tableView.tableHeaderView  addGestureRecognizer:swipeGestureRight];
+        [self.tableView.tableHeaderView  addGestureRecognizer:swipeGestureLeft];
     }
     
     if(!self.imagePager){
         self.defaultimagePagerFrame = CGRectMake(0.0f, -self.defaultimagePagerHeight * self.parallaxScrollFactor * 2, self.tableView.frame.size.width, self.defaultimagePagerHeight + (self.defaultimagePagerHeight * self.parallaxScrollFactor * 4));
         _imagePager = [[KIImagePager alloc] initWithFrame:self.defaultimagePagerFrame];
         self.imagePager.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        
+        
+        self.imagePager.indicatorDisabled = YES;
         
         [self insertSubview:self.imagePager belowSubview:self.tableView];
         
@@ -118,9 +109,9 @@
     // Add the background tableView
     if (!self.backgroundView) {
         
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0, self.defaultJunkViewHeight,
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0, self.defaultimagePagerHeight,
                                                                 self.tableView.frame.size.width,
-                                                                self.tableView.frame.size.height - self.defaultJunkViewHeight)];
+                                                                self.tableView.frame.size.height - self.defaultimagePagerHeight)];
         view.backgroundColor = self.backgroundViewColor;
         self.backgroundView = view;
 		self.backgroundView.userInteractionEnabled=NO;
@@ -129,12 +120,29 @@
 
 }
 
-//-(void)catchHeaderGesture:(UIGestureRecognizer*)sender
-//{
-//    self.tableView.userInteractionEnabled = false;
-//    
-//    NSLog(@"header gesture");
-//}
+-(void)catchHeaderGestureRight:(UISwipeGestureRecognizer*)sender
+{
+    //[self.imagePager setCurrentPage:2 animated:YES];
+    
+    NSLog(@"header gesture right");
+    
+    if(self.currentImage > 0){
+        self.currentImage --;
+        [self.imagePager setCurrentPage:self.currentImage animated:YES];
+    }
+}
+
+-(void)catchHeaderGestureLeft:(UISwipeGestureRecognizer*)sender
+{
+    //[self.imagePager setCurrentPage:2 animated:YES];
+    
+    NSLog(@"header gesture Left");
+    
+    if(self.currentImage < [[self.imagePager.dataSource arrayWithImages] count] -1){
+        self.currentImage ++;
+        [self.imagePager setCurrentPage:self.currentImage animated:YES];
+    }
+}
 
 - (void)setTableViewDataSource:(id<UITableViewDataSource>)tableViewDataSource
 {
@@ -153,15 +161,6 @@
     
     if (_tableViewDataSource) {
         [self.tableView reloadData];
-    }
-}
-
-- (void)setJunkView:(UIImageView *)junkView
-{
-    _junkView = junkView;
-    
-    if([self.delegate respondsToSelector:@selector(locationDetail:junkViewDidLoad:)]){
-        [self.delegate locationDetail:self junkViewDidLoad:self.junkView];
     }
 }
 

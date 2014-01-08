@@ -23,7 +23,6 @@
     self.locationDetail.tableViewDelegate = self;
     
     self.locationDetail.delegate = self;
-    self.locationDetail.defaultJunkViewHeight = 220.0; // larger than normal
     self.locationDetail.parallaxScrollFactor = 0.3; // little slower than normal.
     
     [self.view addSubview:self.locationDetail];
@@ -168,11 +167,6 @@
 
 #pragma mark - LocationDetailViewDelegate
 
-- (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail junkViewDidLoad:(UIImageView *)junkView
-{
-    junkView.image = [UIImage imageNamed:@"einstock.jpg"];
-}
-
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail imagePagerDidLoad:(KIImagePager *)imagePager
 {
     imagePager.dataSource = self;
@@ -181,6 +175,9 @@
     imagePager.pageControl.pageIndicatorTintColor = [UIColor blackColor];
     imagePager.slideshowTimeInterval = 0.0f;
     imagePager.slideshowShouldCallScrollToDelegate = YES;
+    
+    self.locationDetail.nbImages = [self.locationDetail.imagePager.dataSource.arrayWithImages count];
+    self.locationDetail.currentImage = 0;
 }
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail tableViewDidLoad:(UITableView *)tableView
