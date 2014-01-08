@@ -222,9 +222,10 @@
 - (NSArray *) arrayWithImages
 {
     return @[
-             @"https://raw.github.com/kimar/tapebooth/master/Screenshots/Screen1.png",
-             @"https://raw.github.com/kimar/tapebooth/master/Screenshots/Screen2.png",
-             @"https://raw.github.com/kimar/tapebooth/master/Screenshots/Screen3.png"
+             @"https://irs2.4sqi.net/img/general/500x500/2514_BvEN_Q6lG50xZQ9TIG0XY8eYXzF3USSMdtTmxHCmqnE.jpg",
+             @"https://irs3.4sqi.net/img/general/500x500/6555164_Rkk21OJj4X54X8bkutzxbeCwLHTA8Hrre6_wUVc1DMg.jpg",
+             @"https://irs2.4sqi.net/img/general/500x500/3648632_NVZOdXiRTkVtzHoGNh5c5SqsF2NxYDB_FMfXRCbYu6I.jpg",
+             @"https://irs1.4sqi.net/img/general/500x500/23351702_KoUKj6hZLOTHIsawxi2L64O5CpJwCadeIv2daMBDE8Q.jpg"
              ];
 }
 

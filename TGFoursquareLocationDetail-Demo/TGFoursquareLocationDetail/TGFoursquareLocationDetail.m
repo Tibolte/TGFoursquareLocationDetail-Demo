@@ -92,7 +92,7 @@
     }
     
     if(!self.imagePager){
-        self.defaultimagePagerFrame = CGRectMake(0.0f, -self.defaultimagePagerHeight * self.parallaxScrollFactor * 2, self.tableView.frame.size.width, self.defaultimagePagerHeight + (self.defaultimagePagerHeight * self.parallaxScrollFactor * 4));
+        self.defaultimagePagerFrame = CGRectMake(0.0f, -self.defaultimagePagerHeight * self.parallaxScrollFactor *2, self.tableView.frame.size.width, self.defaultimagePagerHeight + (self.defaultimagePagerHeight * self.parallaxScrollFactor * 4));
         _imagePager = [[KIImagePager alloc] initWithFrame:self.defaultimagePagerFrame];
         self.imagePager.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
