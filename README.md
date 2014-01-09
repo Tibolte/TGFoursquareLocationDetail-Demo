@@ -5,6 +5,14 @@ Foursquare has recently released a new version of its app taking advantage of th
 
 This project is not providing all functionnalities but the main parts are available, you are of course invited to use, fork and improve this project using your own knowledge.
 
+Behaviour
+===============================
+
+When you scroll, image's shown area will become bigger. Like it appears on location detail page in Foursquare app.
+Also when you scroll up the UITableView, the header will automatically appear. At the opposite, if you scroll down it will fade away.
+
+See gif at: http://i.imgur.com/8MdObWA.gif 
+
 Usage
 ===============================
 
@@ -46,6 +54,17 @@ Import the TGFoursquareLocationDetail folder into your project and set the TGFou
 
 Screenshots
 ===============================
+![1](http://i.imgur.com/hZ6F1E4.png)
 
 
+![2](http://i.imgur.com/YPH8NIW.png)
 
+
+Credits
+===============================
+
+About the images, I was helped by kimar and his project KIImagePager: https://github.com/kimar/KIImagePager.
+
+Use this project as it pleases you.
+
+You can follow me on on Github or here on Linkedin: http://www.linkedin.com/pub/thibault-gu%C3%A9gan/27/399/607
