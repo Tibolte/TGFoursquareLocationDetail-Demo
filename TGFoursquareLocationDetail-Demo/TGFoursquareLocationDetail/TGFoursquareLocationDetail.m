@@ -48,6 +48,11 @@
     self.backgroundViewColor        = [UIColor clearColor];
 }
 
+- (void)dealloc
+{
+	[self.tableView removeObserver:self forKeyPath:@"contentOffset"];
+}
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];
