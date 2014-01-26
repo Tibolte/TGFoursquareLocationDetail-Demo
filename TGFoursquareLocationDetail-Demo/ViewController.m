@@ -104,7 +104,7 @@
             myRegion.span.longitudeDelta = 0.2;
             
             // move the map to our location
-            [_map setRegion:myRegion animated:YES];
+            [_map setRegion:myRegion animated:NO];
             
             //annotation
             TGAnnotation *annot = [[TGAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(64.135338, -21.895210)];
@@ -149,7 +149,7 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reusable"];
         }
         
-        cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+        cell.textLabel.text = @"Default cell";
         
         return cell;
     }

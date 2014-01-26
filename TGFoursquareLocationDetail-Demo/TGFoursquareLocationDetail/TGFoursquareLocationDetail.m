@@ -127,8 +127,6 @@
 
 -(void)catchHeaderGestureRight:(UISwipeGestureRecognizer*)sender
 {
-    //[self.imagePager setCurrentPage:2 animated:YES];
-    
     NSLog(@"header gesture right");
     
     if(self.currentImage > 0){
@@ -138,9 +136,7 @@
 }
 
 -(void)catchHeaderGestureLeft:(UISwipeGestureRecognizer*)sender
-{
-    //[self.imagePager setCurrentPage:2 animated:YES];
-    
+{    
     NSLog(@"header gesture Left");
     
     if(self.currentImage < [[self.imagePager.dataSource arrayWithImages] count] -1){
