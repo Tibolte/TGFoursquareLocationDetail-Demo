@@ -247,7 +247,8 @@
 {
     CGRect pageControlFrame = CGRectMake(0, 0, _scrollView.frame.size.width, kPageControlHeight);
     _pageControl = [[UIPageControl alloc] initWithFrame:pageControlFrame];
-    _pageControl.center = CGPointMake(_scrollView.frame.size.width/2, _scrollView.frame.size.height - 12);
+    //in default library it's not 115 but 12
+    _pageControl.center = CGPointMake(_scrollView.frame.size.width/2, _scrollView.frame.size.height - 115);
     _pageControl.userInteractionEnabled = NO;
     [self addSubview:_pageControl];
 }
