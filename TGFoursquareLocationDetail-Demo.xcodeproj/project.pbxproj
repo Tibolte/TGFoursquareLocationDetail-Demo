@@ -19,8 +19,6 @@
 		AC239358185E5DCE0039E6F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC239357185E5DCE0039E6F8 /* XCTest.framework */; };
 		AC239359185E5DCE0039E6F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC239338185E5DCE0039E6F8 /* Foundation.framework */; };
 		AC23935A185E5DCE0039E6F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC23933C185E5DCE0039E6F8 /* UIKit.framework */; };
-		AC239362185E5DCE0039E6F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC239360185E5DCE0039E6F8 /* InfoPlist.strings */; };
-		AC239364185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC239363185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m */; };
 		AC239370185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */; };
 		AC2A27A11860C4D80008BA46 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2A27A01860C4D80008BA46 /* ViewController.xib */; };
 		AC2A27A31860CCBE0008BA46 /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = AC2A27A21860CCBE0008BA46 /* btn_back.png */; };
@@ -79,9 +77,6 @@
 		AC239350185E5DCE0039E6F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AC239356185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TGFoursquareLocationDetail-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC239357185E5DCE0039E6F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AC23935F185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TGFoursquareLocationDetail-DemoTests-Info.plist"; sourceTree = "<group>"; };
-		AC239361185E5DCE0039E6F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AC239363185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGFoursquareLocationDetail_DemoTests.m; sourceTree = "<group>"; };
 		AC23936E185E5FAF0039E6F8 /* TGFoursquareLocationDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TGFoursquareLocationDetail.h; path = TGFoursquareLocationDetail/TGFoursquareLocationDetail.h; sourceTree = "<group>"; };
 		AC23936F185E5FAF0039E6F8 /* TGFoursquareLocationDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TGFoursquareLocationDetail.m; path = TGFoursquareLocationDetail/TGFoursquareLocationDetail.m; sourceTree = "<group>"; };
 		AC2A27A01860C4D80008BA46 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -148,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				AC23933E185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo */,
-				AC23935D185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests */,
 				AC239337185E5DCE0039E6F8 /* Frameworks */,
 				AC239336185E5DCE0039E6F8 /* Products */,
 			);
@@ -200,24 +194,6 @@
 				AC239341185E5DCE0039E6F8 /* InfoPlist.strings */,
 				AC239344185E5DCE0039E6F8 /* main.m */,
 				AC239346185E5DCE0039E6F8 /* TGFoursquareLocationDetail-Demo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AC23935D185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				AC239363185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m */,
-				AC23935E185E5DCE0039E6F8 /* Supporting Files */,
-			);
-			path = "TGFoursquareLocationDetail-DemoTests";
-			sourceTree = "<group>";
-		};
-		AC23935E185E5DCE0039E6F8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AC23935F185E5DCE0039E6F8 /* TGFoursquareLocationDetail-DemoTests-Info.plist */,
-				AC239360185E5DCE0039E6F8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -401,7 +377,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC239362185E5DCE0039E6F8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +404,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC239364185E5DCE0039E6F8 /* TGFoursquareLocationDetail_DemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,14 +432,6 @@
 				AC23934B185E5DCE0039E6F8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC239360185E5DCE0039E6F8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC239361185E5DCE0039E6F8 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
