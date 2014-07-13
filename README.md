@@ -11,7 +11,7 @@ Behaviour
 When you scroll, image's shown area will become bigger. Like it appears on location detail page in Foursquare app.
 Also when you scroll up the UITableView, the header will automatically appear. At the opposite, if you scroll down it will fade away.
 
-See gif at: http://i.imgur.com/8MdObWA.gif 
+![](https://raw.githubusercontent.com/Tibolte/TGFoursquareLocationDetail-Demo/master/foursquaredemosvg.gif)
 
 Usage
 ===============================
