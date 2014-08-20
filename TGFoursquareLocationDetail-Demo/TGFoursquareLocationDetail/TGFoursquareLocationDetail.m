@@ -92,8 +92,11 @@
         swipeGestureLeft.direction = UISwipeGestureRecognizerDirectionLeft ;
         swipeGestureLeft.cancelsTouchesInView = YES;
         
+        UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(catchTapEvent:)];
+        
         [self.tableView.tableHeaderView  addGestureRecognizer:swipeGestureRight];
         [self.tableView.tableHeaderView  addGestureRecognizer:swipeGestureLeft];
+        [self.tableView.tableHeaderView  addGestureRecognizer:tapRecognizer];
     }
     
     if(!self.imagePager){
@@ -132,6 +135,8 @@
     if(self.currentImage > 0){
         self.currentImage --;
         [self.imagePager setCurrentPage:self.currentImage animated:YES];
+        
+        [self.imagePager.delegate imagePager:self.imagePager didScrollToIndex:self.currentImage];
     }
 }
 
@@ -142,7 +147,16 @@
     if(self.currentImage < [[self.imagePager.dataSource arrayWithImages] count] -1){
         self.currentImage ++;
         [self.imagePager setCurrentPage:self.currentImage animated:YES];
+        
+        [self.imagePager.delegate imagePager:self.imagePager didScrollToIndex:self.currentImage];
     }
+}
+
+-(void)catchTapEvent:(UITapGestureRecognizer*)sender
+{
+    NSLog(@"tap gesture");
+    
+    [self.imagePager.delegate imagePager:self.imagePager didSelectImageAtIndex:self.currentImage];
 }
 
 - (void)setTableViewDataSource:(id<UITableViewDataSource>)tableViewDataSource
