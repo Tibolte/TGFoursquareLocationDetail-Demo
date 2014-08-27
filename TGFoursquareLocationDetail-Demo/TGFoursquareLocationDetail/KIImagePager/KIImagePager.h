@@ -55,6 +55,7 @@
 
 - (void) reloadData;
 - (void) setCurrentPage:(NSUInteger)currentPage animated:(BOOL)animated;
+- (void) updateCaptionLabelForImageAtIndex:(NSUInteger)index;
 
 @end
 

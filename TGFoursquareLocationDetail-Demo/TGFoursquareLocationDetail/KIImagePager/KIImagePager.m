@@ -120,7 +120,7 @@
 
 - (void) initializeCaption
 {
-    _captionLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, _scrollView.frame.size.width - 10, 20)];
+    _captionLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 170, _scrollView.frame.size.width - 10, 20)];
     [_captionLabel setBackgroundColor:self.captionBackgroundColor];
     [_captionLabel setTextColor:self.captionTextColor];
     [_captionLabel setFont:self.captionFont];
@@ -270,6 +270,7 @@
         if ([[_dataSource captionForImageAtIndex:index] length] > 0) {
             [_captionLabel setHidden:NO];
             [_captionLabel setText:[NSString stringWithFormat:@" %@", [_dataSource captionForImageAtIndex:index]]];
+            NSLog(@"Caption vaut: %@", [NSString stringWithFormat:@" %@", [_dataSource captionForImageAtIndex:index]]);
             return;
         }
     }

@@ -111,7 +111,7 @@
         
         if([self.delegate respondsToSelector:@selector(locationDetail:imagePagerDidLoad:)]){
             [self.delegate locationDetail:self imagePagerDidLoad:self.imagePager];
-        }
+        }        
     }
     
     // Add the background tableView
@@ -137,6 +137,7 @@
         [self.imagePager setCurrentPage:self.currentImage animated:YES];
         
         [self.imagePager.delegate imagePager:self.imagePager didScrollToIndex:self.currentImage];
+        [self.imagePager updateCaptionLabelForImageAtIndex:self.currentImage];
     }
 }
 
@@ -149,6 +150,7 @@
         [self.imagePager setCurrentPage:self.currentImage animated:YES];
         
         [self.imagePager.delegate imagePager:self.imagePager didScrollToIndex:self.currentImage];
+        [self.imagePager updateCaptionLabelForImageAtIndex:self.currentImage];
     }
 }
 

@@ -178,6 +178,7 @@
     
     self.locationDetail.nbImages = [self.locationDetail.imagePager.dataSource.arrayWithImages count];
     self.locationDetail.currentImage = 0;
+    //[imagePager updateCaptionLabelForImageAtIndex:self.locationDetail.currentImage];
 }
 
 - (void)locationDetail:(TGFoursquareLocationDetail *)locationDetail tableViewDidLoad:(UITableView *)tableView
@@ -239,6 +240,7 @@
     return @[
              @"First screenshot",
              @"Another screenshot",
+             @"And another one",
              @"Last one! ;-)"
              ][index];
 }
