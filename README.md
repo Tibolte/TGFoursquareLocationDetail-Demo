@@ -60,6 +60,12 @@ Screenshots
 ![2](http://i.imgur.com/YPH8NIW.png)
 
 
+TODO list or suggestions
+===============================
+
+Improve scrolling behaviour of the imagePager, for now it's only based on UISwipeLeftGestureRecognizer or UISwipeRightGestureRecognizer.
+
+
 Credits
 ===============================
 
