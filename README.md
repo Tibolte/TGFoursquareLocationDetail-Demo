@@ -60,6 +60,15 @@ Screenshots
 ![2](http://i.imgur.com/YPH8NIW.png)
 
 
+Using CocoaPods
+===============================
+
+TGFoursquareLocationDetail is available through [CocoaPods](http://cocoapods.org), to install
+it simply add the following line to your Podfile:
+
+    pod "TGFoursquareLocationDetail"
+
+
 TODO list or suggestions
 ===============================
 
