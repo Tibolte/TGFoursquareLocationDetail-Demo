@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name              = 'TGFoursquareLocationDetail'
-    s.version           = '1.0.0'
+    s.version           = '1.0.1'
     s.summary           = 'iOS project recreating Foursquare design and behaviour when presenting location details'
     s.homepage          = 'https://github.com/Tibolte/TGFoursquareLocationDetail-Demo'
     s.license           = {
